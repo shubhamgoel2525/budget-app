@@ -31,3 +31,11 @@ $ng serve
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Screenshots
+
+![Homepage](screenshots/file.png "Landing page")
+
+## Built With
+
+* [Angular](https://angular.io/) - Angular is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations.
