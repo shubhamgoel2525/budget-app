@@ -1,6 +1,6 @@
 # BudgetApp
 
-See the deployed version at `https://budget-app-shubham.herokuapp.com/`
+See the deployed version at [this link](https://budget-app-shubham.herokuapp.com/)
 
 ## Development server
 
