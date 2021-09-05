@@ -71,6 +71,7 @@
 .expense {
     p {
         color: $red;
+        margin: 0;
     }
 
     .amount {
@@ -80,6 +81,7 @@
 
 .income {
     p {
+        margin: 0;
         color: $green;
     }
 

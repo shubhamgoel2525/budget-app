@@ -1,38 +1,40 @@
 <form #itemForm="ngForm" (ngSubmit)="onSubmit(itemForm)">
-    <div class="field is-horizontal">
-        <div class="field-body">
+  <div class="field is-horizontal">
+    <div class="field-body">
+      <div class="field is-narrow control">
+        <input
+          type="number"
+          class="input"
+          placeholder="Amount"
+          [ngModel]="item.amount"
+          style="width: 100px"
+          name="amount"
+          required
+        />
+      </div>
 
-            <div class="field is-narrow">
-                <p class="control">
-                    <input 
-                        type="number" 
-                        class="input" 
-                        placeholder="Amount" 
-                        [ngModel]="item.amount" 
-                        style="width: 100px;"
-                        name="amount"
-                        required />
-                </p>
-            </div>
+      <div class="field control">
+        <input
+          type="text"
+          class="input"
+          placeholder="Description"
+          [ngModel]="item.description"
+          name="description"
+          required
+        />
+      </div>
 
-            <div class="field">
-                <p class="control">
-                    <input 
-                        type="text" 
-                        class="input" 
-                        placeholder="Description" 
-                        [ngModel]="item.description"
-                        name="description"
-                        required />
-                </p>
-            </div>
-
-            <div class="field is-narrow">
-                <button type="submit" class="button" [ngClass]="{ 'is-primary': isNewItem, 'is-success': !isNewItem }" [disabled]="!itemForm.valid">
-                    <p *ngIf="isNewItem">Add</p>
-                    <p *ngIf="!isNewItem">Save</p>
-                </button>
-            </div>
-        </div>
+      <div class="field is-narrow">
+        <button
+          type="submit"
+          class="button"
+          [ngClass]="{ 'is-primary': isNewItem, 'is-success': !isNewItem }"
+          [disabled]="!itemForm.valid"
+        >
+          <span *ngIf="isNewItem">Add</span>
+          <span *ngIf="!isNewItem">Save</span>
+        </button>
+      </div>
     </div>
+  </div>
 </form>
