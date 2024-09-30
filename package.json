@@ -26,7 +26,7 @@
     "@angular/router": "^13.2.3",
     "bulma": "^0.9.3",
     "express": "^4.21.0",
-    "minimist": "^1.2.6",
+    "minimist": "^1.2.8",
     "path": "^0.12.7",
     "rxjs": "^7.5.4",
     "tslib": "^2.3.1",
